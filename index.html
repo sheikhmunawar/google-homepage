@@ -1,0 +1,66 @@
+<!--
+Tips:
+1. Make it look like google.com
+2. Any dropdown menus or form submissions or hover-highlighting should be ignored.
+3. look into the css property -webkit-appearance: none; or -moz-appearance if you’re using Firefox.
+*****Steps*****
+1. Start with just putting the main elements on the page (the logo image and search form)
+2. Then get them placed horizontally.
+3. You can either download the Google logo or link directly to its URL on the web in your <img> tag.
+4. navbar across the top, first building the content and then trying to position it.
+    Check out how to build a horizontal CSS navbar if you’re lost.
+5. Put in the footer, which should be very similar to the top navbar.
+6. Push your project to Github using the instructions above!
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Search Replica</title>
+  </head>
+  <body>
+    <header>
+      <a href="https://mail.google.com/mail">Gmail</a>
+      <a href="https://www.google.com.pk/imghp">Images</a>
+      <a href="https://www.google.com.pk/intl/en/about/products"><img src="images/google-app.png"> </a>
+      <a><img src="images/notification.png"></a>
+      <a href="https://accounts.google.com/SignOutOptions"><img src="images/user.png"></a>
+    </header>
+    <div class="CenterBlock">
+      <div class="logoBlock">
+      <img id="logo" src="images/googlelogo_color_272x92dp.png">
+      </div>
+      <div id="formBlock">
+      <form id="dummyForm" method="post" action="#">
+        <div id="formInputBlock">
+          <input id="searchTextBox" type="text">
+          <div id="serchButtons">
+          <input class="searchButton" id="searchButtonLeft" type="submit" value="Google Search">
+          <input class="searchButton" id="feelingButtonRight" type="submit" value="Iam feeling Lucky">
+          </div>
+        </div>
+      </form>
+      <div id="languages">
+        Google offered in:  
+          <a dir="rtl" href="https://www.google.com/preferences?hl=ps#languages">اردو</a>
+          <a dir="rtl" href="https://www.google.com/preferences?hl=ps#languages">پښتو</a>
+          <a dir="rtl" href="https://www.google.com/preferences?hl=ps#languages">سنڌي</a>
+        </div>
+    </div>
+    <footer>
+      <div id="countryBlock">
+        <span id="footerCountry">Pakistan</span>
+      </div>
+      <span id="rightFooterMenu">
+        <a href="https://www.google.com/intl/en_pk/ads">Advertising</a>
+        <a href="https://www.google.com/services">Business</a>
+        <a href="https://www.google.com/intl/en_pk/about">About</a>
+      </span>
+      <span id="leftFooterMenu">
+        <a href="https://policies.google.com/privacy">Privacy</a>
+        <a href="https://policies.google.com/terms">Terms</a>
+        <a href="https://www.google.com/preferences">Setting</a>
+      </span>
+    </footer>
+  </body>
+</html>
